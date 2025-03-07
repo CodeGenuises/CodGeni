@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            display: flex;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            width: 800px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .text-content {
+            flex: 1;
+            padding: 40px;
+        }
+
+        .text-content h1 {
+            font-size: 24px;
+            color: #1a1a1a;
+        }
+
+        .text-content span {
+            font-weight: bold;
+        }
+
+        .text-content p {
+            font-size: 14px;
+            color: #666;
+            margin: 10px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 15px;
+            background-color: #003399;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .image-content {
+            flex: 1;
+            background: url('https://via.placeholder.com/400') no-repeat center;
+            background-size: cover;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                width: 90%;
+            }
+
+            .image-content {
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="text-content">
+            <h1>Helping you find the <span>property of your dreams.</span></h1>
+            <p>Creating quality urban lifestyles, building stronger communities.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="image-content"></div>
+    </div>
+</body>
+</html>
